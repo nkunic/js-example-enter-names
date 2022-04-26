@@ -8,11 +8,12 @@ import './css/style.css';
 
 // Names array
 var names = [];
+var namesArray = document.querySelector('#namesArray');
 
 // Get name function
 function askUser() {
   // Enter names
-  //var nameValue = prompt('Enter name!');
+  var nameValue = prompt('Enter name!');
 
   if (nameValue !== 'end') {
     names[names.length] = nameValue;
@@ -24,13 +25,10 @@ function askUser() {
 askUser();
 
 // Display names function
-var namesArray = document.querySelector('#namesArray');
 function displayNames() {
-
   for (var i = 0; i < names.length; i++) {
-    console.log(names[i]);
+    //console.log(names[i]);
+    namesArray.innerText = names;
   }
-
-  console.log(names);
-  namesArray.innerHTML = names;
+  //console.log(names);
 }

@@ -11,6 +11,7 @@ var names = [];
 
 // Get name function
 function askUser() {
+  // Enter names
   //var nameValue = prompt('Enter name!');
 
   if (nameValue !== 'end') {
@@ -25,9 +26,11 @@ askUser();
 // Display names function
 var namesArray = document.querySelector('#namesArray');
 function displayNames() {
-  console.log(names);
+
   for (var i = 0; i < names.length; i++) {
     console.log(names[i]);
-    namesArray.innerHTML = names;
   }
+
+  console.log(names);
+  namesArray.innerHTML = names;
 }

@@ -22,9 +22,12 @@ function askUser() {
 }
 askUser();
 
+// Display names function
+var namesArray = document.querySelector('#namesArray');
 function displayNames() {
   console.log(names);
   for (var i = 0; i < names.length; i++) {
     console.log(names[i]);
+    namesArray.innerHTML = names;
   }
 }

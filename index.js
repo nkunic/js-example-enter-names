@@ -1,5 +1,6 @@
-// Import stylesheets
-import './style.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
+import './css/style.css';
 
 // Write Javascript code!
 
@@ -21,13 +22,8 @@ function askUser() {
 }
 askUser();
 
-//console.log(names);
-
-// for(var i=0; i < names.length; i++){
-//   console.log(names[i]);
-// }
-
 function displayNames() {
+  console.log(names);
   for (var i = 0; i < names.length; i++) {
     console.log(names[i]);
   }

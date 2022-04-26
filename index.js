@@ -4,8 +4,11 @@ import './style.css';
 // Write Javascript code!
 
 /*** ENTER NAMES ***/
+
+// Names array
 var names = [];
 
+// Get name function
 function askUser() {
   //var nameValue = prompt('Enter name!');
 

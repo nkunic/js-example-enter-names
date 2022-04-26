@@ -12,7 +12,7 @@ var names = [];
 function askUser() {
   //var nameValue = prompt('Enter name!');
 
-  if (nameValue !== 'kraj') {
+  if (nameValue !== 'end') {
     names[names.length] = nameValue;
     askUser();
   } else {
